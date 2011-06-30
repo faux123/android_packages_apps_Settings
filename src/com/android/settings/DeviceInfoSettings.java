@@ -76,6 +76,7 @@ public class DeviceInfoSettings extends PreferenceActivity {
         setValueSummary("baseband_version", "gsm.version.baseband");
         setStringSummary("device_model", Build.MODEL);
         setStringSummary("build_number", Build.DISPLAY);
+        setValueSummary("mod_version", "ro.modversion");
         findPreference("kernel_version").setSummary(getFormattedKernelVersion());
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
